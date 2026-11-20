@@ -1,0 +1,14 @@
+/* Base design tokens. Each client's theme.scss (added after this file) overrides them. */
+:root {
+  --brand-primary: #3f51b5;
+  --brand-secondary: #283593;
+  --brand-accent: #ffc107;
+  --brand-on-primary: #ffffff;
+  --surface: #ffffff;
+  --page-bg: #f3f4f6;
+  --radius: 6px;
+  --font: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font); background: var(--page-bg); color: #111; }

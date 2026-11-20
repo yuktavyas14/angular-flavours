@@ -1,0 +1,2 @@
+.hero { padding: 48px 24px; border-radius: var(--radius); background: var(--brand-secondary); color: var(--brand-on-primary); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }

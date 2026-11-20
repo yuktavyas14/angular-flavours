@@ -1,0 +1,9 @@
+<header class="header">
+  <a routerLink="/" class="brand">{{ config.name }}</a>
+  <input class="search" type="search" placeholder="Search products" />
+  <nav>
+    <a routerLink="/products">Products</a>
+    <a *coreIfFeature="'deals'" routerLink="/deals">Deals</a>
+    <a routerLink="/cart">Cart ({{ cart.count() }})</a>
+  </nav>
+</header>

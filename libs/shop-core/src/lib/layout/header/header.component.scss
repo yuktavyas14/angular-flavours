@@ -1,0 +1,5 @@
+.header { display: flex; gap: 16px; align-items: center; padding: 12px 24px; background: var(--brand-primary); color: var(--brand-on-primary); }
+.brand { font-size: 1.4rem; font-weight: 700; color: inherit; text-decoration: none; }
+.search { flex: 1; padding: 8px 12px; border: 0; border-radius: var(--radius); }
+nav { display: flex; gap: 16px; }
+nav a { color: inherit; text-decoration: none; }

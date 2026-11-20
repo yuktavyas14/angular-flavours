@@ -1,0 +1,17 @@
+<div class="banner">
+  <h1>{{ config.tagline }}</h1>
+  @if (config.features.primeBadge) {
+    <span class="prime">prime · FREE one-day delivery</span>
+  }
+</div>
+
+@for (c of categories; track c) {
+  <section class="shelf">
+    <h2>Top picks in {{ c }}</h2>
+    <div class="row">
+      @for (p of byCategory(c); track p.id) {
+        <core-product-card [product]="p" />
+      }
+    </div>
+  </section>
+}

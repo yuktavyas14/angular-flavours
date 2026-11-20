@@ -1,0 +1,4 @@
+.banner { padding: 56px 24px; background: linear-gradient(#232f3e, #eaeded); color: #fff; border-radius: var(--radius); }
+.prime { display: inline-block; background: #00a8e1; padding: 4px 10px; border-radius: 4px; font-weight: 700; }
+.shelf { background: #fff; padding: 16px; margin-top: 16px; border-radius: var(--radius); }
+.row { display: grid; grid-auto-flow: column; grid-auto-columns: 220px; gap: 16px; overflow-x: auto; }

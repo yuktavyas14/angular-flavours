@@ -1,0 +1,10 @@
+<section class="hero">
+  <h1>Welcome to {{ config.name }}</h1>
+  <p>{{ config.tagline }}</p>
+</section>
+<h2>Featured</h2>
+<div class="grid">
+  @for (p of products; track p.id) {
+    <core-product-card [product]="p" />
+  }
+</div>

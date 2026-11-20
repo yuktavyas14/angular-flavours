@@ -1,0 +1,16 @@
+<header>
+  <div class="top">
+    <a routerLink="/" class="brand">
+      {{ config.name }} <small><i>{{ config.tagline }}</i></small>
+    </a>
+    <input type="search" placeholder="Search for products, brands and more" />
+    <a routerLink="/cart" class="cart">🛒 Cart <b>{{ cart.count() }}</b></a>
+  </div>
+  <div *coreIfFeature="'flashSale'" class="flash">⚡ Big Billion Days sale is live</div>
+  <nav class="cats">
+    @for (c of categories; track c) {
+      <a routerLink="/products">{{ c }}</a>
+    }
+    <a *coreIfFeature="'deals'" routerLink="/deals" class="deals">Deals</a>
+  </nav>
+</header>

@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "base",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start", "--", "--port", "4200"],
+      "port": 4200
+    },
+    {
+      "name": "amazon",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start:amazon", "--", "--port", "4201"],
+      "port": 4201
+    },
+    {
+      "name": "flipkart",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start:flipkart", "--", "--port", "4202"],
+      "port": 4202
+    }
+  ]
+}
